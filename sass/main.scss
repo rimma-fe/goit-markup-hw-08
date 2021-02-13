@@ -1,0 +1,26 @@
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./base/defaults";
+@import "./utils/placeholders";
+@import "./components/logo";
+@import "./components/header-section";
+
+@import "./components/header-navigation";
+
+@import "./components/header-contacts-list";
+@import "./components/_link-current";
+@import "./components/hero-section";
+@import "./components/hero-button";
+@import "./components/advantages-list";
+@import "./components/_duties-section";
+@import "./components/section-team";
+@import "./components/regular-customers";
+
+@import "./components/projects-section";
+
+@import "./components/footer";
+@import "./components/footer-sotial-networks";
+@import "./components/_footer-signup-form";
+
+@import "./components/backdrop";
+@import "./components/field-check";
