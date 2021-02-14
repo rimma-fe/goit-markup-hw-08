@@ -343,6 +343,18 @@ body {
   color: #2196f3;
 }
 
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  /*background-color: transparent;*/
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
 .header__nav-link--current {
   position: relative;
   display: block;
