@@ -2,16 +2,17 @@
   margin-top: 0;
   margin-bottom: 0px;
   text-align: center;
+}
 
-  &__title {
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-weight: 900px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $second-text-accent;
-  }
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 900px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $second-text-accent;
+
   @media screen and (min-width: 480px) {
     font-size: 26px;
     line-height: 1.6;
@@ -25,27 +26,34 @@
 
 .hero__title-container {
   @media screen and (min-width: 768px) {
-    width: 360px;
     margin: 0 auto;
   }
   @media screen and (min-width: 1170px) {
-    width: 696px;
     margin: 0 auto;
   }
 }
 
 .hero__overlay {
-  /* max-width: 1600;*/
-  height: 400px;
-  /*height: 400px;*/
-  padding-top: 118px;
-  /* padding-top: 200px;*/
   margin-left: auto;
   margin-right: auto;
 
   margin-top: 0;
   margin-bottom: 0px;
   text-align: center;
+  @media screen and (min-width: 480px) {
+    height: 400px;
+    padding-top: 118px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    max-width: 1600;
+    height: 600px;
+    padding-top: 200px;
+  }
 }
 
 .hero__overlay {
@@ -59,4 +67,31 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.hero__button {
+  display: inline-block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: $second-text-accent;
+  background-color: $accent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: transform 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $background-color;
+    color: $accent;
+  }
 }

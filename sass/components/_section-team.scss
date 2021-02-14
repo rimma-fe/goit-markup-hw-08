@@ -1,18 +1,3 @@
-section-team__list-img {
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    height: 460px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 374px;
-  }
-  @media screen and (min-width: 480px) {
-    width: 270px;
-    height: 260px;
-  }
-}
-
 .section-team {
   background-color: $filter-color;
   padding-top: 60px;
@@ -36,7 +21,7 @@ section-team__list-img {
 
   @media screen and (min-width: 1170px) {
     display: flex;
-    flex-wrap: wrap;
+
     margin: -15px;
   }
 }
@@ -53,12 +38,6 @@ section-team__list-img {
   @media screen and (min-width: 1170px) {
     flex-basis: calc((100% - 8 * 15px) / 4);
     margin: 15px;
-  }
-
-  @media screen and (max-widht: 767px) {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
   }
 }
 
