@@ -1,1 +1,34 @@
+footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
+  background-color: $sec-background-color;
+}
+
+.footer__address-container {
+  text-align: center;
+}
+
+.footer__address {
+  margin-top: 20px;
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  color: $second-text-accent;
+}
+
+.footer__item-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.footer__email-item {
+  margin-bottom: 9px;
+}
+
+.footer__tel-item {
+  margin-bottom: 60px;
+}
