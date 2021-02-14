@@ -593,7 +593,7 @@ body {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1170px) {
   .section-duties {
     display: none;
   }
@@ -677,10 +677,8 @@ body {
 
 @media screen and (min-width: 1170px) {
   .section-team__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin: -15px;
+    isplay: inline-flex;
   }
 }
 
@@ -701,8 +699,8 @@ body {
 
 @media screen and (min-width: 1170px) {
   .section-team__list-item {
-    -ms-flex-preferred-size: calc((100% - 8 * 15px) / 4);
-        flex-basis: calc((100% - 8 * 15px) / 4);
+    -ms-flex-preferred-size: calc((100% - 7 * 110px) / 4);
+        flex-basis: calc((100% - 7 * 110px) / 4);
     margin: 15px;
   }
 }
