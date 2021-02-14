@@ -1,1 +1,136 @@
+section-team__list-img {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 460px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 270px;
+    height: 260px;
+  }
+}
 
+.section-team {
+  background-color: $filter-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1170px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.section-team__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.section-team__list-item {
+  background-color: $background-color;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1170px) {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+
+  @media screen and (max-widht: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.section-team__list-actions {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  outline: 1px solid $outlineColorblack;
+  list-style: none;
+}
+
+.section-team__list-actions--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: $background-color;
+  color: $icons-list-color;
+  border-radius: 50%;
+  border: none;
+  background-position: center;
+  cursor: pointer;
+
+  transition-property: background-color color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $second-text-accent;
+    background-color: $accent;
+  }
+}
+
+.section-team__list-body {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.section-team__list-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.section-team__list-experience {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.list-actions__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-icon {
+  fill: currentColor;
+}
