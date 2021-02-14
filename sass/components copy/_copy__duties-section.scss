@@ -1,0 +1,47 @@
+.section-duties {
+  padding-bottom: 94px;
+}
+.section-duties__list {
+  display: flex;
+
+  margin-left: -30px;
+  margin-top: -30px;
+  flex-basis: calc(100% / 3-30px);
+
+  &-item {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+.section-duties__img-container {
+  position: relative;
+
+  .section-duties__img {
+    display: block;
+  }
+}
+/*duties overlay*/
+.section-duties__text-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  .section-duties__list-text {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $second-text-accent;
+  }
+}
