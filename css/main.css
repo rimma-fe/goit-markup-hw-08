@@ -355,6 +355,14 @@ body {
   display: none;
 }
 
+.menu-button .is-open .icon-cross {
+  display: block;
+}
+
+.menu-button .is-open .icon-menu {
+  display: block;
+}
+
 .header__nav-link--current {
   position: relative;
   display: block;
