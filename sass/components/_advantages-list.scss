@@ -33,9 +33,8 @@
     flex-basis: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
-
-  @media screen and (max-widht: 767px) {
-    &:not(:last-child) {
+  &:not(:last-child) {
+    @media screen and (min-width: 480px) {
       margin-bottom: 30px;
     }
   }

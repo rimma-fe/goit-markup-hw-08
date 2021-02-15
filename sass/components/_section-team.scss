@@ -20,8 +20,9 @@
   }
 
   @media screen and (min-width: 1170px) {
+    display: flex;
+
     margin: -15px;
-    isplay: inline-flex;
   }
 }
 .section-team__list-item {
@@ -35,11 +36,15 @@
     margin: 15px;
   }
   @media screen and (min-width: 1170px) {
-    flex-basis: calc((100% - 7 * 110px) / 4);
+    flex-basis: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
+  @media screen and (max-widht: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
-
 .section-team__list-actions {
   display: flex;
 
@@ -103,10 +108,6 @@
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-
-.list-actions__item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .team-icon {

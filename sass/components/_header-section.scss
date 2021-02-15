@@ -1,9 +1,23 @@
 .menu-button {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  /*background-color: transparent;*/
+  @media screen and (max-width: 480px) {
+    position: absolute;
+    top: 22px;
+    left: 90%;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    /*background-color: transparent;*/
+  }
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus + .icon-menu {
+    fill: $accent;
+  }
 }
 .menu-button .icon-cross {
   display: none;
@@ -15,4 +29,51 @@
 
 .menu-button .is-open .icon-menu {
   display: block;
+}
+
+.header__menu-container {
+  position: relative;
+}
+
+.header {
+  @media screen and (min-width: 768px) {
+    .header__nav-list {
+      display: flex;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 88px;
+    }
+    .header__contacts-list {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .header__nav-list-item:not(:last-child) {
+      margin-right: 50px;
+    }
+    .header__container {
+      display: inline-flex;
+    }
+  }
+}
+
+.header__nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }

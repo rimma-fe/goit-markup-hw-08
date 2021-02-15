@@ -2,6 +2,11 @@
   margin-top: 0;
   margin-bottom: 0px;
   text-align: center;
+
+  @media screen and (max-width: 479px) {
+    padding-top: 118px;
+    padding-bottom: 11s8px;
+  }
 }
 
 .hero__title {
@@ -25,6 +30,12 @@
 }
 
 .hero__title-container {
+  @media screen and (max-width: 479px) {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 118px;
+  }
+
   @media screen and (min-width: 768px) {
     margin: 0 auto;
   }
@@ -47,6 +58,7 @@
 
   @media screen and (min-width: 768px) {
     height: 400px;
+    padding-top: 118px;
   }
 
   @media screen and (min-width: 1170px) {
