@@ -1,5 +1,14 @@
+.header {
+  @media screen and (min-width: 768px) {
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+
 .menu-button {
-  @media screen and (max-width: 480px) {
+  @media screen and (min-widht: 768px) {
     position: absolute;
     top: 22px;
     left: 90%;
@@ -10,12 +19,12 @@
     border: none;
     /*background-color: transparent;*/
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 
   &:hover,
-  &:focus + .icon-menu {
+  &:focus {
     fill: $accent;
   }
 }
@@ -43,37 +52,97 @@
       margin-bottom: 0;
       margin-left: 88px;
     }
-    .header__contacts-list {
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
+
+  }
+    
+
+
+    
     .header__nav-list-item:not(:last-child) {
       margin-right: 50px;
     }
-    .header__container {
-      display: inline-flex;
-    }
+    
+
+
+.header__nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
   }
 }
 
-.header__nav-link {
-  display: block;
+
+  }
+}
+
+  
+.header__container {
+      display: inline-flex;
+    }
+  
+
+.header__contacts-item + .header__contacts-item {
+  @media screen and (min-widht:1170px) {
+    margin-left: 50px;
+  }
+  
+}
+
+.header__contacts-link {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: $title-text-color;
+  color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition-property: color;
+  transition-property: color fill;
   transition-duration: 250ms;
+  transition-timing-function: $timing-function;
 
   &:hover,
   &:focus {
     color: $accent;
+    fill: $accent;
   }
 }
+
+.header__contacts-list {
+  @media screen and (min-widht: 1170px) {
+    display: flex;
+    flex-wrap: wrap;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+  }
+  
+
+
+  .header__nav-link {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      color: $title-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      transition-property: color;
+      transition-duration: 250ms;
+      &:hover,
+      &:focus {
+      color: $accent;
+    }
+  }
+
+
+
+  
