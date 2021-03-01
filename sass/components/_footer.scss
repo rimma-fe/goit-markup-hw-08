@@ -5,8 +5,24 @@ footer {
   background-color: $sec-background-color;
 }
 
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__adress-networks--wrapper {
+  @media screen (min-width: 768px) and (max-width: 1199px) {
+    max-width: 610px;
+    margin: 0 auto;
+  }
+}
+
 .footer__address-container {
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__address {

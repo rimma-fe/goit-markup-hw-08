@@ -2,13 +2,7 @@
   margin-top: 0;
   margin-bottom: 0px;
   text-align: center;
-
-  @media screen and (max-width: 479px) {
-    padding-top: 118px;
-    padding-bottom: 11s8px;
-  }
 }
-
 .hero__title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -23,7 +17,7 @@
     line-height: 1.6;
   }
 
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.4;
   }
@@ -31,7 +25,6 @@
 
 .hero__title-container {
   @media screen and (max-width: 479px) {
-    text-align: center;
     margin: 0 auto;
     padding-top: 118px;
   }
@@ -39,7 +32,7 @@
   @media screen and (min-width: 768px) {
     margin: 0 auto;
   }
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
     margin: 0 auto;
   }
 }
@@ -61,7 +54,7 @@
     padding-top: 118px;
   }
 
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
     max-width: 1600;
     height: 600px;
     padding-top: 200px;
@@ -79,31 +72,4 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-
-.hero__button {
-  display: inline-block;
-  text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  min-width: 200px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
-  color: $second-text-accent;
-  background-color: $accent;
-  border: 1px solid transparent;
-  border-radius: 4px;
-
-  cursor: pointer;
-
-  transition: transform 250ms $timing-function;
-
-  &:hover,
-  &:focus {
-    background-color: $background-color;
-    color: $accent;
-  }
 }

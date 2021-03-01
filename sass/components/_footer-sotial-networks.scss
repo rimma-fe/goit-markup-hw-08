@@ -10,11 +10,13 @@
 }
 
 .footer__sotial-networks--container {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 60px;
 
   padding: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer__sotial-networks--list {

@@ -2,7 +2,9 @@ body {
   margin: 0;
   font-family: $mainFontFamily;
   color: $primary-text-color;
-  @extend %mainFontProperties;
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
 
   letter-spacing: 0.03em;
 }
@@ -20,8 +22,8 @@ body {
     width: 768px;
   }
 
-  @media screen and (min-width: 1170px) {
-    width: 1170px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
