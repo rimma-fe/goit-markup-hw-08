@@ -482,6 +482,12 @@ ul {
   display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu-container.is-open {
+    display: none;
+  }
+}
+
 .header__mobile-navigation--list {
   margin-bottom: 64px;
 }
