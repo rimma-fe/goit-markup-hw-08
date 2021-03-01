@@ -9,19 +9,17 @@ footer {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-.footer__adress-networks--wrapper {
-  @media screen (min-width: 768px) and (max-width: 1199px) {
-    max-width: 610px;
-    margin: 0 auto;
+    justify-content: space-around;
   }
 }
 
 .footer__address-container {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
