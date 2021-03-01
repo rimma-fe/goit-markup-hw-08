@@ -45,8 +45,9 @@
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-  height: 100vw;
+
   z-index: 2;
+  overflow: hidden;
 
   &.is-open {
     display: block;

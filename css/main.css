@@ -474,8 +474,8 @@ ul {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-  height: 100vw;
   z-index: 2;
+  overflow: hidden;
 }
 
 .mobile-menu-container.is-open {
@@ -1343,8 +1343,6 @@ ul {
   text-decoration: none;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 63px;
-  padding-bottom: 63px;
   margin: 0;
   left: 0;
   top: 0;
@@ -1360,10 +1358,31 @@ ul {
   transition: transform 250ms ease, -webkit-transform 250ms ease;
 }
 
+@media screen and (min-width: 480px) {
+  .section-projects__item-overlay {
+    padding-top: 74px;
+    padding-bottom: 74px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .section-projects__item-overlay {
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-projects__item-overlay {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
+}
+
 .section-projects__overlay-text {
   padding: 0;
   margin: 0;
-  text-align: start;
+  /*text-align: start;*/
   text-decoration: none;
   font-size: 18px;
   line-height: 1.6;
