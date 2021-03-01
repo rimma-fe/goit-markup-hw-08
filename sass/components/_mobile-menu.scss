@@ -42,24 +42,18 @@
   top: 100%;
   left: 0;
   width: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
 
   z-index: 2;
   overflow: hidden;
 
   &.is-open {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 
     @media screen and (min-width: 768px) {
       display: none;
     }
   }
-}
-
-.header__mobile-navigation--list {
-  margin-bottom: 64px;
 }
 
 .header__mobile-navigation--item:not(:last-child) {
@@ -72,10 +66,6 @@
   line-height: 1.18;
   text-decoration: none;
   color: $title-text-color;
-}
-
-.header__mobile-contacts--list {
-  margin-bottom: 64px;
 }
 
 .header__mobile-contacts--item:not(:last-child) {

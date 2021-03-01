@@ -471,25 +471,22 @@ ul {
   top: 100%;
   left: 0;
   width: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
   z-index: 2;
   overflow: hidden;
 }
 
 .mobile-menu-container.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
   .mobile-menu-container.is-open {
     display: none;
   }
-}
-
-.header__mobile-navigation--list {
-  margin-bottom: 64px;
 }
 
 .header__mobile-navigation--item:not(:last-child) {
@@ -502,10 +499,6 @@ ul {
   line-height: 1.18;
   text-decoration: none;
   color: #212121;
-}
-
-.header__mobile-contacts--list {
-  margin-bottom: 64px;
 }
 
 .header__mobile-contacts--item:not(:last-child) {
