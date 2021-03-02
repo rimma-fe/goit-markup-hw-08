@@ -728,11 +728,11 @@ ul {
   margin-top: 0;
   margin-bottom: 0px;
   text-align: center;
+  height: 400px;
 }
 
 @media screen and (min-width: 480px) {
   .hero__overlay {
-    height: 400px;
     padding-top: 118px;
   }
 }
@@ -1730,11 +1730,12 @@ footer .logo {
   position: fixed;
   margin: 0;
   padding: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1743,20 +1744,18 @@ footer .logo {
 }
 
 .backdrop__modal {
-  min-height: 609px;
-  min-width: 450px;
-  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 40px;
   padding-bottom: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   padding-left: 41px;
   padding-right: 41px;
   min-height: 581px;
   min-width: 528px;
+  background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: translate 250ms linear, opacity 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
@@ -1765,6 +1764,9 @@ footer .logo {
 
 .backdrop__close-button {
   content: "";
+  position: absolute;
+  right: 8px;
+  top: 8px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1782,6 +1784,129 @@ footer .logo {
   background-repeat: no-repeat;
   background-size: 11px, 11px;
   display: inline-block;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop__form {
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.backdrop__form-text--container {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  width: 448px;
+  margin-bottom: 12px;
+}
+
+.backdrop__form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 28px;
+  margin: 0;
+}
+
+.backdrop__form-label {
+  color: #757575;
+  font-size: 12px;
+  line-height: 1.17;
+  margin-bottom: 4px;
+}
+
+.backdrop__label-text {
+  margin-bottom: 4px;
+}
+
+.backdrop__form--icon-container {
+  position: relative;
+  margin-top: 4px;
+}
+
+.backdrop__form--icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.backdrop__form-input {
+  width: 448px;
+  height: 40px;
+  margin: 0;
+  padding-left: 35px;
+  font: inherit;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.backdrop__form-input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.backdrop__form-input:focus + .backdrop__form--icon {
+  fill: #2196f3;
+}
+
+.backdrop__textarea {
+  margin-top: 4px;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+.backdrop__textarea:focus {
+  border-color: #2196f3;
+}
+
+.backdrop__send-form--button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: #2196f3;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.backdrop__send-form--button:hover, .backdrop__send-form--button:focus {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .backdrop__field-check--container {
@@ -1814,6 +1939,11 @@ footer .logo {
   border: 2px solid #212121;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.backdrop__checkbox-text {
+  display: inline-block;
+  margin-left: 39px;
 }
 
 .backdrop__checkbox-link {

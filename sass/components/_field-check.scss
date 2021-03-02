@@ -31,6 +31,10 @@
   cursor: pointer;
 }
 
+.backdrop__checkbox-text {
+  display: inline-block;
+  margin-left: 39px;
+}
 .backdrop__checkbox-link {
   color: $accent;
 }
