@@ -1,3 +1,9 @@
+.footer__sotial-networks--container {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
 .footer__sotial-networks--text {
   font-weight: 700;
   font-size: 14px;
@@ -6,20 +12,13 @@
   text-transform: uppercase;
   color: $second-text-accent;
   margin-bottom: 20px;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
-
-.footer__sotial-networks--container {
-  margin-bottom: 60px;
-
-  padding: 0;
-}
-
 .footer__sotial-networks--list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 .footer__sotial-networks--list-item {
