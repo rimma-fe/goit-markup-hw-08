@@ -1,3 +1,15 @@
+.header__nav {
+  display: flex;
+  align-items: center;
+}
 .header__nav-list {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+  }
+}
+
+.header__nav-list-item:not(:last-child) {
+  margin-right: 50px;
 }
