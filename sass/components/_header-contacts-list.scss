@@ -2,6 +2,7 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
+    margin-left: auto;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -12,4 +13,8 @@
   @media screen and (min-width: 1200px) {
     margin-left: 50px;
   }
+}
+
+.header__contacts-link {
+  text-decoration: none;
 }

@@ -380,6 +380,20 @@ ul {
   padding-bottom: 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .button-open,
 .menu__button-close {
   background-color: transparent;
@@ -433,8 +447,18 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header__nav-list {
+    margin-left: 93px;
+  }
+}
+
 .header__nav-list-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header__nav-link {
+  text-decoration: none;
 }
 
 .header__contacts-list {
@@ -444,6 +468,7 @@ ul {
 @media screen and (min-width: 768px) {
   .header__contacts-list {
     display: block;
+    margin-left: auto;
   }
 }
 
@@ -459,6 +484,10 @@ ul {
   .header__contacts-item + .header__contacts-item {
     margin-left: 50px;
   }
+}
+
+.header__contacts-link {
+  text-decoration: none;
 }
 
 .header__nav-link--current {
@@ -1159,6 +1188,8 @@ ul {
   text-decoration: none;
   padding-left: 24px;
   padding-right: 24px;
+  padding-top: 74px;
+  padding-bottom: 74px;
   margin: 0;
   left: 0;
   top: 0;
@@ -1172,13 +1203,6 @@ ul {
   transition: -webkit-transform 250ms ease;
   transition: transform 250ms ease;
   transition: transform 250ms ease, -webkit-transform 250ms ease;
-}
-
-@media screen and (min-width: 480px) {
-  .section-projects__item-overlay {
-    padding-top: 74px;
-    padding-bottom: 74px;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1198,7 +1222,6 @@ ul {
 .section-projects__overlay-text {
   padding: 0;
   margin: 0;
-  /*text-align: start;*/
   text-decoration: none;
   font-size: 18px;
   line-height: 1.6;
