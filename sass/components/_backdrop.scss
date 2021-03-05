@@ -23,7 +23,7 @@
   max-height: 609px;
   width: 100vw;
   max-width: 450px;
-  overflow: scroll;
+  overflow-y: scroll;
   background-color: $background-color;
   @media screen and (min-width: 1200px) {
     position: absolute;
