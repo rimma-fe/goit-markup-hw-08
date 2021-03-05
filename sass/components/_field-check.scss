@@ -8,14 +8,13 @@
 }
 
 .backdrop__checkbox-label::before {
- 
   content: "";
   width: 16px;
   height: 15px;
   margin-right: 8px;
   border: 1px solid #212121;
   border-radius: 2px;
- 
+}
 
 .backdrop__checkbox-label {
   display: flex;
