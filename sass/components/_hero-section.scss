@@ -79,24 +79,4 @@
       background-image: url(../images/hero-images/hero-mobile-img@2x.jpg);
     }
   }
-
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/hero-images/hero-tablet-img.jpg);
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      .hero__overlay {
-        background-image: url(../images/hero-images/hero-tablet-img@2x.jpg);
-      }
-    }
-  }
 }
-
-
-@media screen and (min-width: 768px) {
-    background-image: url(../images/hero-images/hero-desctop-img.jpg);
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      .hero__overlay {
-        background-image: url(../images/hero-images/hero-desctop-img@2x.jpg);
