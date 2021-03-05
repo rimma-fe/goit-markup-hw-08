@@ -20,6 +20,12 @@
   }
 }
 
+.footer__form-button--wrapper {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .footer__signup-field--label {
   color: $second-text-accent;
   position: absolute;

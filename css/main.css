@@ -1872,6 +1872,14 @@ footer .logo {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__form-button--wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .footer__signup-field--label {
   color: #ffffff;
   position: absolute;
