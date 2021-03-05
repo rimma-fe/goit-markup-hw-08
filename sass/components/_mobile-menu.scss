@@ -1,6 +1,8 @@
 .mobile-menu-container {
   display: flex;
 
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   top: 0;
   left: 50%;
@@ -58,6 +60,7 @@
 .header__mobile-contacts--list {
   display: flex;
   flex-direction: column;
+  margin-bottom: 64px;
 }
 
 .header__mobile-contacts--item:not(:last-child) {
