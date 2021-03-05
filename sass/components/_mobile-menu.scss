@@ -47,8 +47,27 @@
     display: none;
   }
 }
+.header__mobile-navigation--list {
+  text-decoration: none;
+  font-weight: 480px;
+  font-size: 40px;
+  line-height: 1.8;
+  color: #212121;
+}
+
+.header__mobile-navigation--item {
+  font-weight: 480px;
+  font-size: 40px;
+  line-height: 1.8;
+  color: #212121;
+}
+
 .header__mobile-navigation--link {
   text-decoration: none;
+  font-weight: 480px;
+  font-size: 40px;
+  line-height: 1.8;
+  color: #212121;
 }
 
 .header__mobile-contacts--link {
