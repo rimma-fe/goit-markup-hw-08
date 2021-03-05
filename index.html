@@ -654,7 +654,7 @@
             <label class="backdrop__form-label">
                <span class="backdrop__label-text">Имя</span> 
                 <div class="backdrop__form--icon-container">
-                <input class="backdrop__form-input" type="text" name="username" placeholder="Иван Иванович*" required minlength="2"/>
+                <input class="backdrop__form-input" type="text" name="username" placeholder=""  minlength="2"/>
                 <svg class="backdrop__form--icon" width="18px" height="18px">
                     <use href="./images/sprite-icons.svg#icon-person-black-18dp-1"></use>
                 </svg>
@@ -686,19 +686,21 @@
             <div class="backdrop__form-field">
             <label class="backdrop__form-label">
                 Комментарий
-                <textarea class="backdrop__textarea" name="user-message" rows="5" placeholder="Введите текст"></textarea>
+                <textarea class="backdrop__textarea" name="user-message" placeholder="Введите текст"></textarea>
             </label>
             </div>
-            <div class="backdrop__field-check--container">
-                <label class="backdrop__checkbox-label">
-                    <div class="backdrop__checkbox-icon-container">
-                    <input class="backdrop__checkbox-input visually-hidden" type="checkbox" name="agree"/>
+            
+               
+                    
+                    <input class="backdrop__checkbox-input visually-hidden" id="policy-check" type="checkbox" name="agree"/>
+                    <label for="policy-check" class="backdrop__checkbox-label">Соглашаюсь с рассылкой и принимаю
+                    <a class="backdrop__checkbox-link" href=""> Условия договора </a></label>
                     <span class="backdrop__checkbox-icon"></span>
-                    </div>
-                    <div class="backdrop__checkbox-text">Соглашаюсь с рассылкой и принимаю</div>
-                    <a class="backdrop__checkbox-link" href=""> Условия договора </a> 
-                </label>
-            </div>
+                    
+                    
+                    
+                
+            
             <button class="backdrop__send-form--button" type="submit">Отправить</button>
             </form>
            
