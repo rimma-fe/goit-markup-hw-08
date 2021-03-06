@@ -1931,7 +1931,7 @@ footer .logo {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer__form-button--wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1946,7 +1946,19 @@ footer .logo {
   }
 }
 
-.footer__signup-field--label {
+@media screen and (min-width: 1200px) {
+  .footer__form-button--wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: baseline;
+            flex-direction: baseline;
+  }
+}
+
+.footer__form-button--wrapper .footer__signup-field--label {
   color: #ffffff;
   position: absolute;
   top: 50%;
@@ -1959,7 +1971,7 @@ footer .logo {
           transform: translateY(-50%);
 }
 
-.footer__signup-field--input {
+.footer__form-button--wrapper .footer__signup-field--input {
   padding-left: 16px;
   display: block;
   width: 80vw;
@@ -1976,7 +1988,7 @@ footer .logo {
 }
 
 @media screen and (max-width: 1199px) {
-  .footer__signup-field--input {
+  .footer__form-button--wrapper .footer__signup-field--input {
     margin-bottom: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -1984,25 +1996,25 @@ footer .logo {
 }
 
 @media screen and (min-width: 1199px) {
-  .footer__signup-field--input {
+  .footer__form-button--wrapper .footer__signup-field--input {
     width: 358px;
     margin-right: 12px;
   }
 }
 
-.footer__signup-field--input:focus {
+.footer__form-button--wrapper .footer__signup-field--input:focus {
   outline: none;
   border-color: #2196f3;
 }
 
-.footer__signup-field--input:focus + .footer__signup-field--label {
+.footer__form-button--wrapper .footer__signup-field--input:focus + .footer__signup-field--label {
   top: 5px;
   left: 16px;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
 
-.footer__sign-button {
+.footer__form-button--wrapper .footer__sign-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2025,19 +2037,19 @@ footer .logo {
 }
 
 @media screen and (max-width: 1200px) {
-  .footer__sign-button {
+  .footer__form-button--wrapper .footer__sign-button {
     margin-left: auto;
     margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer__sign-button {
+  .footer__form-button--wrapper .footer__sign-button {
     margin-left: 12px;
   }
 }
 
-.footer__sign-button::after {
+.footer__form-button--wrapper .footer__sign-button::after {
   content: "";
   display: inline-block;
   margin-left: 10px;

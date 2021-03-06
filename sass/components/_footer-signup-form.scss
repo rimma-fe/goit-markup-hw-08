@@ -14,91 +14,96 @@
 }
 
 .footer__form-button--wrapper {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
+
     align-items: center;
     flex-direction: column;
   }
-}
-
-.footer__signup-field--label {
-  color: $second-text-accent;
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transition: transform 250ms $timing-function;
-  transform: translateY(-50%);
-}
-
-.footer__signup-field--input {
-  padding-left: 16px;
-  display: block;
-  width: 80vw;
-  max-width: 450px;
-  margin: 0;
-  height: 50px;
-  background-color: #2f303a;
-  color: $second-text-accent;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  @media screen and (min-width: 1199px) {
-    width: 358px;
-    margin-right: 12px;
-  }
-  &:focus {
-    outline: none;
-    border-color: $accent;
-  }
-  &:focus + .footer__signup-field--label {
-    top: 5px;
-    left: 16px;
-    transform: translateY(-100%);
-  }
-}
-
-.footer__sign-button {
-  display: flex;
-  align-items: center;
-
-  min-width: 200px;
-
-  border: 1px solid $accent;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  color: $second-text-accent;
-  background-color: $accent;
-
-  padding: 10px 28px;
-  background-color: $accent;
-
-  border-radius: 4px;
-  cursor: pointer;
-  @media screen and (max-width: 1200px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  transition: 250 $timing-function;
   @media screen and (min-width: 1200px) {
-    margin-left: 12px;
+    display: flex;
+    flex-direction: baseline;
   }
 
-  &::after {
-    content: "";
-    display: inline-block;
-    margin-left: 10px;
-    width: 24px;
-    height: 24px;
-    background-image: url("../images/icon-send.svg");
+  .footer__signup-field--label {
+    color: $second-text-accent;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transition: transform 250ms $timing-function;
+    transform: translateY(-50%);
+  }
+
+  .footer__signup-field--input {
+    padding-left: 16px;
+    display: block;
+    width: 80vw;
+    max-width: 450px;
+    margin: 0;
+    height: 50px;
+    background-color: #2f303a;
+    color: $second-text-accent;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media screen and (min-width: 1199px) {
+      width: 358px;
+      margin-right: 12px;
+    }
+    &:focus {
+      outline: none;
+      border-color: $accent;
+    }
+    &:focus + .footer__signup-field--label {
+      top: 5px;
+      left: 16px;
+      transform: translateY(-100%);
+    }
+  }
+
+  .footer__sign-button {
+    display: flex;
+    align-items: center;
+
+    min-width: 200px;
+
+    border: 1px solid $accent;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    color: $second-text-accent;
+    background-color: $accent;
+
+    padding: 10px 28px;
+    background-color: $accent;
+
+    border-radius: 4px;
+    cursor: pointer;
+    @media screen and (max-width: 1200px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    transition: 250 $timing-function;
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      margin-left: 10px;
+      width: 24px;
+      height: 24px;
+      background-image: url("../images/icon-send.svg");
+    }
   }
 }
