@@ -14,12 +14,10 @@
 }
 
 .footer__form-button--wrapper {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
-  @media screen and (min-width: 1200px) {
+    flex-direction: column;
   }
 }
 
@@ -70,8 +68,6 @@
 .footer__sign-button {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
 
   min-width: 200px;
 
@@ -88,6 +84,10 @@
 
   border-radius: 4px;
   cursor: pointer;
+  @media screen and (max-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   transition: 250 $timing-function;
   @media screen and (min-width: 1200px) {
     margin-left: 12px;
