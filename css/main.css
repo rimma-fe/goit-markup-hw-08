@@ -569,6 +569,10 @@ p {
   color: #212121;
 }
 
+.header__nav-link:hover, .header__nav-link:focus {
+  color: #2196f3;
+}
+
 .header__contacts-list {
   display: none;
 }
@@ -617,6 +621,10 @@ p {
     font-size: 14px;
     line-height: 1.142;
   }
+}
+
+.header__contacts-link:hover, .header__contacts-link:focus {
+  color: #2196f3;
 }
 
 .header__tel-link {

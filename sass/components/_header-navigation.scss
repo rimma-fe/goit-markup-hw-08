@@ -25,4 +25,8 @@
   letter-spacing: 0.02em;
 
   color: #212121;
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
