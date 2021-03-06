@@ -94,12 +94,8 @@
     background-image: url("../images/icon-send.svg");
   }
 }
-.footer__sign-button {
-  min-width: 200px;
-  height: 50px;
-  border: none;
-  background-color: $accent;
-  color: #fff;
-  background-color: blue;
-  border-radius: 4px;
+
+.footer__form-button--wrapper {
+  display: flex;
+  text-align: center;
 }

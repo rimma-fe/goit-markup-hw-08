@@ -25,11 +25,6 @@
   &:not(:last-child) {
     margin-right: 10px;
   }
-
-  &:hover,
-  &:focus {
-    background-color: $accent;
-  }
 }
 
 .footer__sotial-networks--list-link {
@@ -47,6 +42,10 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent;
+  }
 }
 
 .footer__sotial-networks--list-icon {
