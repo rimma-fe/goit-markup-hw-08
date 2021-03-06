@@ -1931,17 +1931,6 @@ footer .logo {
   }
 }
 
-@media screen and (min-width: 1199px) {
-  footer__signup-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer__form-button--wrapper {
     display: -webkit-box;
@@ -2022,20 +2011,24 @@ footer .logo {
   margin-left: auto;
   margin-right: auto;
   min-width: 200px;
-  margin-left: 12px;
   border: 1px solid #2196f3;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   color: #ffffff;
   background-color: #2196f3;
-  margin: 0;
   padding: 10px 28px;
   background-color: #2196f3;
   border-radius: 4px;
   cursor: pointer;
   -webkit-transition: 250 cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250 cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__sign-button {
+    margin-left: 12px;
+  }
 }
 
 .footer__sign-button::after {
