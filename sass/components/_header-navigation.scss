@@ -7,6 +7,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 88px;
+    text-align: center;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
@@ -25,6 +26,10 @@
   letter-spacing: 0.02em;
 
   color: #212121;
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   &:hover,
   &:focus {
     color: $accent;
