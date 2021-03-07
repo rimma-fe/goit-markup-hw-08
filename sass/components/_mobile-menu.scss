@@ -45,10 +45,20 @@
   position: absolute;
   top: 10px;
   right: 15px;
+  transform: fill 500ms $timing-function;
+  &:hover,
+  &:focus {
+    fill: $accent;
+  }
 }
 .button-open {
   @media screen and (min-width: 768px) {
     display: none;
+    transform: fill 500ms $timing-function;
+  }
+  &:hover,
+  &:focus {
+    fill: $accent;
   }
 }
 
