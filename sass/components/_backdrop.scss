@@ -43,7 +43,13 @@
 
   transition: translate 250ms $timing-function,
     opacity 250ms linear $timing-function;
+
+  @media screen and (min-width: 1200px) {
+    max-height: 581px;
+    max-width: 528px;
+  }
 }
+
 .backdrop__close-button {
   content: "";
   position: absolute;
