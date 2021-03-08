@@ -1,24 +1,12 @@
 .hero {
-  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0 auto;
   text-align: center;
 
   background-color: $sec-background-color;
-
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-img/hero-mobile-img.jpg);
-  background-color: $sec-background-color;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
-.hero__overlay {
+.hero {
   max-width: 480px;
   height: 400px;
   background-image: linear-gradient(
@@ -26,7 +14,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero-img/hero-mobile-img.jpg");
+    url(../images/hero-images/hero-mobile-img.jpg);
   background-color: $sec-background-color;
   background-repeat: no-repeat;
   background-position: center;
@@ -39,7 +27,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/hero-img/hero-tablet-img.jpg");
+      url(../images/hero-images/hero-tablet-img.jpg);
     background-color: $sec-background-color;
     background-repeat: no-repeat;
     background-position: center;
@@ -53,11 +41,35 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/hero-img/hero-desctop-img.jpg");
+      url(../images/hero-images/hero-desctop-img.jpg);
     background-color: $sec-background-color;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero-images/hero-mobile-img@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero-images/hero-tablet-img@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero-images/hero-desctop-img@2x.jpg);
   }
 }
 .hero__title {
