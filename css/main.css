@@ -770,7 +770,7 @@ p {
 }
 
 .backdrop__modal {
-  position: absolute;
+  position: fixed;
   flex-direction: column;
   padding: 40px;
   top: 50%;
