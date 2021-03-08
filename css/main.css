@@ -2085,6 +2085,7 @@ footer .logo {
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .backdrop__checkbox-label::before {
