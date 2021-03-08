@@ -2084,6 +2084,7 @@ footer .logo {
   background-image: url("../images/icon-check.svg");
   background-size: contain;
   background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 .backdrop__checkbox-label::before {
@@ -2099,8 +2100,6 @@ footer .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
