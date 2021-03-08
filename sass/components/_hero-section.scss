@@ -2,22 +2,8 @@
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  height: 400px;
   background-color: $sec-background-color;
-}
-
-.hero__title {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.6;
-
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-.hero {
   max-width: 480px;
   height: 400px;
   background-image: linear-gradient(
@@ -58,4 +44,18 @@
     background-position: center;
     background-size: cover;
   }
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61538;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $second-text-accent;
 }
