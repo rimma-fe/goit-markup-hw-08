@@ -355,6 +355,10 @@ p {
   justify-content: space-between;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .mobile-menu-container {
   display: flex;
   flex-direction: column;
