@@ -21,15 +21,14 @@
 
 .header__nav-link {
   text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  color: #212121;
-  @media screen and (min-width: 1200px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    padding: 32px 0;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
   }
   &:hover,
   &:focus {
