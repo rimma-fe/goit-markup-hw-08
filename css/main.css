@@ -673,9 +673,7 @@ p {
   padding-bottom: 118px;
   margin: 0 auto;
   text-align: center;
-  height: 400px;
   background-color: #2f303a;
-  height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img/hero-mobile-img.jpg);
   background-color: #2f303a;
   background-repeat: no-repeat;
@@ -1424,7 +1422,6 @@ p {
   display: block;
   width: 100%;
   height: auto;
-  overflow: hidden;
 }
 
 .section-projects__item-overlay {
@@ -1441,6 +1438,7 @@ p {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 1;
+  overflow: hidden;
   transform: translateY(-100%);
   transition: transform 250ms ease;
 }
