@@ -1006,17 +1006,21 @@ p {
 }
 
 .backdrop__form-label {
-  position: relative;
   color: #757575;
   font-size: 12px;
   line-height: 1.17;
   margin-bottom: 4px;
 }
 
+.input-icon__wrap {
+  position: relative;
+  display: block;
+}
+
 .backdrop__form--icon {
   position: absolute;
   display: block;
-  left: 0;
+  left: 15px;
   top: 0;
 }
 
@@ -1024,6 +1028,7 @@ p {
   display: block;
   width: 100%;
   height: 40px;
+  max-width: 448px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
