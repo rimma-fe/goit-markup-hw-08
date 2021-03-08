@@ -1202,6 +1202,16 @@ p {
   fill: #2196f3;
 }
 
+.backdrop__form-label {
+  position: relative;
+}
+
+.backdrop__form--icon {
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
 .backdrop__textarea {
   margin-top: 4px;
   width: 100%;
