@@ -731,6 +731,14 @@ p {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.363;
+    max-width: 696px;
+  }
+}
+
 .hero__button {
   display: block;
   margin: 0 auto;

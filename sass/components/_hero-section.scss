@@ -73,4 +73,10 @@
   text-align: center;
   text-transform: uppercase;
   color: $second-text-accent;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.363;
+    max-width: 696px;
+  }
 }
