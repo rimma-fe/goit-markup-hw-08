@@ -6,6 +6,20 @@
   text-align: center;
   height: 400px;
   background-color: $sec-background-color;
+
+  height: 400px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img/hero-mobile-img.jpg);
+  background-color: $sec-background-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero__overlay {
   max-width: 480px;
   height: 400px;
   background-image: linear-gradient(
@@ -47,7 +61,6 @@
     background-size: cover;
   }
 }
-
 .hero__title {
   margin-bottom: 30px;
   margin-right: auto;

@@ -671,6 +671,15 @@ p {
   text-align: center;
   height: 400px;
   background-color: #2f303a;
+  height: 400px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img/hero-mobile-img.jpg);
+  background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__overlay {
   max-width: 480px;
   height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img/hero-mobile-img.jpg);
@@ -681,7 +690,7 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero__overlay {
     max-width: 768px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img/hero-tablet-img.jpg);
@@ -693,7 +702,7 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
+  .hero__overlay {
     max-width: 1600px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img/hero-desctop-img.jpg);
