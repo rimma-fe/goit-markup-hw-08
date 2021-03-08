@@ -602,7 +602,6 @@ p {
 .header__tel-link {
   align-items: center;
   display: flex;
-  justify-content: center;
 }
 
 .header__contacts-item {
@@ -620,8 +619,8 @@ p {
 
 .header__contacts--mail-icon {
   align-items: center;
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   margin-right: 8px;
   fill: currentColor;
 }
@@ -629,13 +628,15 @@ p {
 @media screen and (min-width: 1200px) {
   .header__contacts--mail-icon {
     margin-right: 10px;
+    width: 16px;
+    height: 10px;
   }
 }
 
 .header__contacts--tel-icon {
   align-items: center;
   width: 10px;
-  height: 16px;
+  height: 14px;
   margin-right: 8px;
   fill: currentColor;
 }
@@ -643,6 +644,8 @@ p {
 @media screen and (min-width: 1200px) {
   .header__contacts--tel-icon {
     margin-right: 10px;
+    width: 10px;
+    height: 16px;
   }
 }
 
