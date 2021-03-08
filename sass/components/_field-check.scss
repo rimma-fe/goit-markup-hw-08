@@ -18,10 +18,15 @@
 
 .backdrop__checkbox-label {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 30px;
 }
 
 .backdrop__checkbox-input:focus + .backdrop__checkbox-label::before {
   border-color: 1px solid #212121;
+}
+
+.backdrop__checkbox-link {
+  color: $accent;
 }

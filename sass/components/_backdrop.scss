@@ -1,197 +1,3 @@
-/*.backdrop {
-  position: fixed;
-  margin: 0;
-  padding: 0;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transition: opasity 250ms cubic-bezier(0.4 0, 0.2, 1);
-
-  &.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-}
-
-.backdrop__modal {
-  position: absolute;
-
-  padding: 40px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 95vh;
-  max-height: 609px;
-  width: 100vw;
-  max-width: 450px;
-  background-color: $background-color;
-  @media screen and (max-width: 1199px) {
-    overflow-y: scroll;
-  }
-  @media screen and (min-width: 1200px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 41px;
-    padding-right: 41px;
-
-    min-height: 581px;
-    min-width: 528px;
-    background-color: $background-color;
-
-    transform: translate(-50%, -50%);
-    transition: translate 250ms linear, opacity 250ms linear $timing-function;
-  }
-}
-.backdrop__close-button {
-  content: "";
-  position: absolute;
-
-  right: 8px;
-  top: 8px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-
-  background-color: $background-color;
-  width: 30px;
-  height: 30px;
-  background-image: url("../images/close-icon.svg");
-  color: $title-text-color;
-  box-sizing: border-box;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 11px, 11px;
-  display: inline-block;
-  transition: transform 250ms $timing-function;
-}
-.backdrop__form {
-  display: flex;
-  flex-direction: column;
-
-  max-width: 448px;
-  width: 100%;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-.backdrop__form-text--container {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: $title-text-color;
-
-  width: 100%;
-  margin-bottom: 12px;
-}
-
-.backdrop__form-label {
-  color: #757575;
-  font-size: 12px;
-  line-height: 1.17;
-  margin-bottom: 4px;
-}
-
-.input-icon__wrap {
-  position: relative;
-  display: block;
-}
-
-.backdrop__form--icon {
-  position: absolute;
-  display: block;
-  left: 15px;
-  top: 0;
-
-  .backdrop__form-input {
-    display: block;
-    width: 100%;
-    height: 40px;
-    max-width: 448px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    margin-top: 4px;
-    margin-bottom: 10px;
-
-    &:focus {
-      outline: none;
-      border-color: $accent;
-    }
-    &:focus + .backdrop__form--icon {
-      fill: $accent;
-    }
-  }
-
-  .backdrop__textarea {
-    margin-top: 4px;
-    font-size: 14px;
-    line-height: 1.143;
-    width: 100%;
-    height: 120px;
-    margin-bottom: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 16px;
-    padding-left: 16px;
-
-    outline: none;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    resize: none;
-
-    &:focus {
-      border-color: $accent;
-    }
-  }
-
-  .backdrop__textarea::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-  }
-
-  .backdrop__send-form--button {
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    text-align: center;
-    min-width: 200px;
-    min-height: 50px;
-    padding: 10px 55px;
-    margin-left: auto;
-    margin-right: auto;
-
-    border: none;
-    background-color: $accent;
-    border-radius: 4px;
-    color: $second-text-accent;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 30px;
-
-    letter-spacing: 0.06em;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
-  }
-}*/
-
 .backdrop {
   position: fixed;
   margin: 0;
@@ -213,6 +19,7 @@
 
 .backdrop__modal {
   display: flex;
+  width: 90%;
   flex-direction: column;
   padding: 40px;
   position: absolute;
@@ -224,9 +31,11 @@
   padding-bottom: 40px;
   padding-left: 41px;
   padding-right: 41px;
+  max-height: 609px;
+  max-width: 450px;
+  min-height: 95%;
+  overflow: scroll;
 
-  min-height: 581px;
-  min-width: 528px;
   background-color: $background-color;
 
   transform: translate(-50%, -50%);
@@ -291,6 +100,7 @@
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border-color 250ms $timing-function;
 
   &:focus {
     outline: none;
@@ -301,7 +111,7 @@
   }
 }
 
-.backdrop__form-label {
+.input-icon__wrap {
   position: relative;
 }
 
@@ -309,11 +119,15 @@
   position: absolute;
 
   left: 15px;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 250ms $timing-function;
 }
 
 .backdrop__textarea {
+  display: block;
   margin-top: 4px;
+  padding: 12px 16px;
   width: 100%;
   height: 120px;
   margin-bottom: 20px;
@@ -322,10 +136,16 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  transition: border-color 250ms $timing-function;
 
   &:focus {
     border-color: $accent;
+    outline: none;
   }
+}
+
+.backdrop__textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .backdrop__send-form--button {
@@ -349,6 +169,7 @@
 
   letter-spacing: 0.06em;
   cursor: pointer;
+  transition: box-shadow 250ms $timing-function;
 
   &:hover,
   &:focus {
