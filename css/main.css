@@ -962,7 +962,7 @@ p {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 677px) {
   .section-advantages__list-item:not(:last-child) {
     margin-bottom: 30px;
   }
