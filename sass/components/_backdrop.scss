@@ -10,7 +10,7 @@
   height: 100%;
   transform: translateX(0);
   transition: all 1000ms $timing-function;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 99;
   &.is-hidden {
@@ -28,7 +28,7 @@
   transform: translate(-50%, -50%);
   height: 95vh;
   max-height: 609px;
-  width: 100vw;
+  width: 100%;
 
   background-color: #fff;
 
