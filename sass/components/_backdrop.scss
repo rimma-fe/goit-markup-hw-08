@@ -20,15 +20,18 @@
 }
 
 .backdrop__modal {
-  position: fixed;
-  display: block;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 95vh;
+  height: 95%;
   max-height: 609px;
   width: 100%;
+  max-width: 450px;
 
   background-color: #fff;
 
@@ -72,12 +75,15 @@
 }
 
 .backdrop__form {
-  max-width: 448px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 767px) {
+    max-width: 370px;
+  }
 }
 
 .backdrop__form-text--container {
@@ -94,7 +100,6 @@
 }
 
 .backdrop__form-input {
-  max-width: 448px;
   width: 100%;
   height: 40px;
   margin: 0;

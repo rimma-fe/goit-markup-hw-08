@@ -373,6 +373,7 @@ p {
   transform: translateX(-50%) translateY(-100%);
   transition: transform 250ms linear;
   z-index: 2;
+  overflow-y: auto;
 }
 
 .mobile-menu-container.is-open {
@@ -796,15 +797,18 @@ p {
 }
 
 .backdrop__modal {
-  position: fixed;
-  display: block;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 95vh;
+  height: 95%;
   max-height: 609px;
   width: 100%;
+  max-width: 450px;
   background-color: #fff;
   transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -848,11 +852,17 @@ p {
 }
 
 .backdrop__form {
-  max-width: 448px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop__form {
+    max-width: 370px;
+  }
 }
 
 .backdrop__form-text--container {
@@ -867,7 +877,6 @@ p {
 }
 
 .backdrop__form-input {
-  max-width: 448px;
   width: 100%;
   height: 40px;
   margin: 0;
