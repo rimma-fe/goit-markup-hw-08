@@ -683,6 +683,7 @@ p {
 }
 
 .hero {
+  max-width: 480px;
   height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-images/hero-mobile-img.jpg);
   background-color: #2f303a;
@@ -693,6 +694,7 @@ p {
 
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-images/hero-tablet-img.jpg);
     background-color: #2f303a;
@@ -704,6 +706,7 @@ p {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-images/hero-desctop-img.jpg);
     background-color: #2f303a;
