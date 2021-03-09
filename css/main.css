@@ -368,6 +368,7 @@ p {
   top: 0;
   left: 50%;
   width: 100%;
+  max-width: 480px;
   height: 95vh;
   padding: 40px 40px;
   background-color: #ffffff;
@@ -790,6 +791,7 @@ p {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   z-index: 99;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -799,16 +801,14 @@ p {
 
 .backdrop__modal {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 95%;
+  height: 95vh;
   max-height: 609px;
-  width: 100%;
+  width: 100vw;
   max-width: 450px;
   background-color: #fff;
   transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
