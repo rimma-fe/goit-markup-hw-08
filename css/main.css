@@ -369,7 +369,7 @@ p {
   left: 50%;
   width: 100%;
   max-width: 480px;
-  height: 95vh;
+  height: 100%;
   padding: 40px 40px;
   background-color: #ffffff;
   transform: translateX(-50%) translateY(-100%);
