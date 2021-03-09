@@ -679,7 +679,6 @@ p {
 }
 
 .hero {
-  max-width: 480px;
   height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-images/hero-mobile-img.jpg);
   background-color: #2f303a;
@@ -690,7 +689,6 @@ p {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-images/hero-tablet-img.jpg);
     background-color: #2f303a;
@@ -714,19 +712,19 @@ p {
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero-images/hero-mobile-img@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-images/hero-mobile-img@2x.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero-images/hero-tablet-img@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-images/hero-tablet-img@2x.jpg);
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero-images/hero-desctop-img@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-images/hero-desctop-img@2x.jpg);
   }
 }
 
@@ -798,7 +796,7 @@ p {
 }
 
 .backdrop__modal {
-  position: absolute;
+  position: fixed;
   display: block;
   padding: 40px;
   top: 50%;
@@ -807,7 +805,6 @@ p {
   height: 95vh;
   max-height: 609px;
   width: 100vw;
-  max-width: 450px;
   background-color: #fff;
   transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }

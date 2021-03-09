@@ -20,7 +20,7 @@
 }
 
 .backdrop__modal {
-  position: absolute;
+  position: fixed;
   display: block;
   padding: 40px;
   top: 50%;
@@ -29,7 +29,7 @@
   height: 95vh;
   max-height: 609px;
   width: 100vw;
-  max-width: 450px;
+
   background-color: #fff;
 
   transition: translate 250ms $timing-function,
