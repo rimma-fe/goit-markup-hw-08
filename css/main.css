@@ -680,6 +680,11 @@ p {
   margin: 0 auto;
   text-align: center;
   background-color: #2f303a;
+  background-image: url(../images/hero-images/hero-desctop-img.jpg);
+  background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero {
@@ -744,6 +749,7 @@ p {
   line-height: 1.61538;
   letter-spacing: 0.06em;
   text-align: center;
+  align-items: center;
   text-transform: uppercase;
   color: #ffffff;
 }
